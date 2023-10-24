@@ -1,0 +1,41 @@
+.navigation__menu {
+  position: absolute;
+  top: 68px;
+  right: 0;
+  left: 0;
+  display: none;
+  // display: flex;
+  min-height: 360px;
+  z-index: 1;
+}
+
+.navigation__menu-button {
+  @include button-style-clear;
+  background-color: transparent;
+}
+
+.navigation__menu-button--closed {
+  display: none;
+}
+
+.navigation__menu-button--opened {
+  display: none;
+  transform: translateX(-8px);
+}
+
+.navigation__list {
+  @include list-style-clear;
+  flex-grow: 1;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #f1f6fc;
+}
+
+.navigation__link {
+  display: block;
+  padding: 14px 40px;
+  font-size: 20px;
+  line-height: normal;
+  color: #000000;
+  text-decoration: none;
+}

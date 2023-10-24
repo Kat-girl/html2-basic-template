@@ -1,5 +1,21 @@
 .header {
-  background-color: #663399;
+  position: relative;
+  padding-top: 2px;
+  padding-bottom: 2px;
   color: #ffffff;
-  padding: 10px 15px;
+  background-color: #f1f6fc;
+  box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
+}
+
+.header--menu--opened {
+  padding-top: 8px;
+  padding-bottom: 3px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 21px;
+  padding-left: 26px;
 }
