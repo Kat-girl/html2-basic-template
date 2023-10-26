@@ -2,10 +2,14 @@
   padding: 18px 84px;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
+  line-height: normal;
+  font-weight: 400;
   letter-spacing: 1px;
-  color: #fbfcfe;
-  background-color: #6a107a;
+  text-align: center;
+  color: $color--white;
+  background-color: $color--purple;
   border-radius: 40px;
+  box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
 }
 
 .button--link {

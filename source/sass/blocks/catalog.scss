@@ -1,0 +1,81 @@
+.catalog {
+  position: relative;
+  padding: 62px 28px 100px;
+}
+
+.catalog::after {
+  position: absolute;
+  left: 46px;
+  bottom: 0;
+  right: 46px;
+  content: url("../../images/line-leaf.svg");
+}
+
+.catalog__title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 36px;
+  line-height: normal;
+  font-weight: 400;
+  text-align: center;
+  color: $color--green;
+}
+
+.catalog__list {
+  @include list-style-clear;
+  display: grid;
+  gap: 24px;
+}
+
+.catalog__item {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding-bottom: 54px;
+  color: $color--black;
+  background-color: $color--white;
+  border-radius: 40px;
+  box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.15);
+  overflow: hidden;
+}
+
+.catalog__item-title {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  line-height: normal;
+  font-weight: 400;
+  text-align: center;
+  color: $color--green;
+}
+
+.catalog__link-title {
+  color: $color--green;
+  text-decoration: none;
+}
+
+.catalog__price-container {
+  margin: 0;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.catalog__price,
+.catalog__currency,
+.catalog__weight {
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+.catalog__currency {
+  margin-right: 17px;
+}
+
+.catalog__button {
+  margin-right: 20px;
+  margin-left: 24px;
+  padding: 14px 64px;
+  box-shadow: none;
+}

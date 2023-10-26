@@ -1,7 +1,15 @@
 .intro {
   min-height: 640px;
   padding: 68px 28px;
-  background: #d3d3d3 url("../../images/intro-bg--mobile.png") center no-repeat;
+  background-color: #d3d3d3;
+  background-image: image-set(
+    "../../images/intro-bg--mobile@2x.webp" type("image/webp") 2x,
+      "../../img/intro-bg--mobile.webp" type("image/webp") 1x,
+      "../../img/intro-bg--mobile@2x.png" type("image/png") 2x,
+      "../../img/intro-bg--mobile.png" type("image/png") 1x
+    );
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .intro__title {
@@ -12,7 +20,7 @@
   line-height: normal;
   font-weight: 400;
   text-align: center;
-  color: #0F805D;
+  color: $color--green;
 }
 
 .intro__list {
