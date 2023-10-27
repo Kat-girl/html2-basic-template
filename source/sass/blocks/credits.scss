@@ -1,0 +1,13 @@
+.credits {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.credits__link {
+  font-size: 11px;
+  line-height: normal;
+  font-weight: 400;
+  color: $color--black;
+  text-decoration: none;
+}

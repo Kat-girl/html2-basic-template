@@ -1,0 +1,23 @@
+.footer {
+  padding-top: 9px;
+  padding-bottom: 20px;
+  color: $color--black;
+  background-color: $color--blue-gray;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  row-gap: 6px;
+  flex-wrap: wrap;
+  padding-right: 26px;
+  padding-left: 26px;
+}
+
+.footer__logo {
+  margin-right: auto;
+}
+
+.footer__credits {
+  margin-left: auto;
+}
