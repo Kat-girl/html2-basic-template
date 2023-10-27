@@ -1,0 +1,80 @@
+.news {
+  position: relative;
+  padding: 58px 26px 100px;
+
+  &::after {
+    position: absolute;
+    left: 46px;
+    bottom: 0;
+    right: 46px;
+    content: url("../../images/line-leaf.svg");
+  }
+}
+
+.news__title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 36px;
+  line-height: normal;
+  font-weight: 400;
+  text-align: center;
+  color: $color--green;
+}
+
+.news__list {
+  @include list-style-clear;
+  display: grid;
+  gap: 24px;
+}
+
+.news__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 400px;
+  padding: 27px 18px 70px;
+  color: $color--black;
+  background-color: $color--white;
+  border-radius: 40px;
+  border: 2px solid $color--green;
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    content: url("../../images/wave-leaf.svg");
+  }
+}
+
+.news__item-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 8px;
+  min-height: 72px;
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+.news__text {
+  flex-grow: 1;
+  margin: 0;
+  min-height: 180px;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+.news__date {
+  margin: 0;
+  font-size: 14px;
+  line-height: normal;
+  font-weight: 400;
+  text-align: end;
+}

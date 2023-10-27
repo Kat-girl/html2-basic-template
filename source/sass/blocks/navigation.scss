@@ -4,9 +4,12 @@
   right: 0;
   left: 0;
   display: none;
-  // display: flex;
   min-height: 360px;
   z-index: 1;
+}
+
+.navigation__menu--opened {
+  display: flex;
 }
 
 .navigation__menu-button {
