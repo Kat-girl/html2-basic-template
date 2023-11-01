@@ -1,0 +1,159 @@
+.form__wrapper {
+  padding-right: 26px;
+  padding-left: 26px;
+}
+
+.form__fielset {
+  @include fieldset-style-clear;
+  margin-bottom: 32px;
+}
+
+.form__legend {
+  margin-bottom: 33px;
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 400;
+  color: $color--green;
+}
+
+.form__list {
+  @include list-style-clear;
+}
+
+.form__list--berries {
+  max-height: 304px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px 20px;
+  flex-wrap: wrap;
+}
+
+.form__item--berries {
+  width: 123px;
+}
+
+.form__label {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.form__checkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: 2px solid $color--green;
+  border-radius: 4px;
+}
+
+.form__checkbox--disabled {
+  border-color: #8e9892;
+}
+
+.form__label-name {
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+}
+
+.form__label-name--delivery-type {
+  display: block;
+}
+
+.form__list--storage {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.form__list--delivery {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.form__radio {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 2px solid $color--green;
+  border-radius: 50%;
+}
+
+.form__input--radio:checked + .form__radio::before {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: $color--green;
+  border-radius: 50%;
+  content: "";
+}
+
+.form__inputs {
+  display: grid;
+  gap: 36px;
+}
+
+.form__label--contacts {
+  padding-left: 0;
+}
+
+.form__label-name--contacts {
+  display: block;
+  margin-bottom: 4px;
+  padding-left: 12px;
+}
+
+.form__label-name--required {
+  color: $color--error;
+}
+
+.form__input {
+  width: 100%;
+  padding: 17px 12px;
+  border: 1px solid $color--green;
+  border-radius: 20px;
+
+  &::placeholder {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(142, 152, 146, 0.70);
+  }
+}
+
+.form__textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__label-name--textarea {
+  display: block;
+  margin-bottom: 4px;
+  padding-left: 22px;
+  font-size: 14px;
+  line-height: normal;
+}
+
+.form__input--textarea {
+  margin: 0;
+  resize: none;
+}
+
+.form__input--address {
+  padding-bottom: 12px;
+}
+

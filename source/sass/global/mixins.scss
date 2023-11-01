@@ -9,3 +9,9 @@
   padding: 0;
   list-style-type: none;
 }
+
+@mixin fieldset-style-clear {
+  margin: 0;
+  padding: 0;
+  border: none;
+}

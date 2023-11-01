@@ -3,6 +3,10 @@
   padding-top: 80px;
 }
 
+.contacts--form {
+  padding-top: 57px;
+}
+
 .contacts__wrapper {
   margin-bottom: 34px;
   padding-right: 27px;
@@ -84,4 +88,9 @@
 
 .contacts__map-container {
   border-radius: 40px;
+  overflow: hidden;
+
+  iframe {
+    border: none;
+  }
 }

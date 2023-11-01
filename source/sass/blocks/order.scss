@@ -1,0 +1,54 @@
+.order {
+  padding-top: 184px;
+  color: $color--black;
+  background-color: #ffffff;
+  background-image:
+    image-set(
+      "../../images/berries-bg--mobile@2x.webp" type("image/webp") 2x,
+      "../../images/berries-bg--mobile.webp" type("image/webp") 1x,
+      "../../images/berries-bg--mobile@2x.png" type("image/png") 2x,
+      "../../images/berries-bg--mobile.png" type("image/png") 1x
+    );
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.order__wrapper {
+  position: relative;
+  padding: 0 26px 75px;
+
+  &::after {
+    position: absolute;
+    right: 46px;
+    bottom: 0;
+    left: 46px;
+    content: url("../../images/line-leaf.svg");
+  }
+}
+
+.order__wrapper--form {
+  padding-bottom: 122px;
+}
+
+.order__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 36px;
+  line-height: normal;
+  font-weight: 400;
+  text-align: center;
+  color: $color--green;
+}
+
+.order__description {
+  margin: 0;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+.order__form {
+  padding-top: 48px;
+}
