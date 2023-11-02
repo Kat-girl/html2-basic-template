@@ -7,10 +7,10 @@
 
   &::after {
     position: absolute;
-    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    height: 5px;
     box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.25);
     z-index: 1;
     content: "";

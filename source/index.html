@@ -9,10 +9,13 @@
   <body class="page__body">
     <header class="header">
       <div class="header__wrapper">
-        <a class="logo header__logo logo--disabled" href="index.html">
-          <svg width="52" height="52" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" role="img">
-            <g>
+        <a class="header__logo logo logo--disabled" href="index.html">
+          <svg class="logo__icon" width="133" height="52" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133 52" role="img">
+            <g class="logo__mobile">
               <use href="images/icons/stack.svg#logo-mobile"></use>
+            </g>
+            <g class="logo__berry">
+              <use href="images/icons/stack.svg#logo-berry"></use>
             </g>
           </svg>
           <span class="visually-hidden">Логотип магазина Ягоды.</span>
@@ -34,16 +37,16 @@
               </li>
             </ul>
           </nav>
-          <button class="navigation__menu-button" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewbox="0 0 60 60" fill="none" role="img">
+          <button class="navigation__menu-button navigation__menu-button--closed" type="button">
+            <svg class="navigation__icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewbox="0 0 60 60" fill="none" role="img">
               <g>
                 <use href="images/icons/stack.svg#burger-menu"></use>
               </g>
             </svg>
             <span class="visually-hidden">Открыть меню.</span>
           </button>
-          <button class="navigation__menu-button navigation__menu-button--opened" type="button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 28 28" fill="none" role="img">
+          <button class="navigation__menu-button navigation__menu-button--opened hide" type="button">
+            <svg  class="navigation__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 28 28" fill="none" role="img">
               <g>
                 <use href="images/icons/stack.svg#close-button"></use>
               </g>
@@ -238,8 +241,8 @@
         <ul class="social">
           <li class="social__item">
             <a class="social__link" href="#">
-              <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" role="img">
-                <g>
+              <svg class="social__icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" role="img">
+                <g class="social__group">
                   <use href="images/icons/stack.svg#telegram"></use>
                 </g>
               </svg>

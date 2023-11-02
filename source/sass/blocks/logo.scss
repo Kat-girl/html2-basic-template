@@ -2,3 +2,20 @@
   pointer-events: none;
   cursor: default;
 }
+
+.logo__icon {
+  display: flex;
+  justify-content: start;
+}
+
+.logo__mobile {
+  transform: translateX(-47px);
+}
+
+.logo__berry {
+
+  transform: translateX(19px);
+  @media (max-width: 767px) {
+    display: none;
+  }
+}

@@ -14,4 +14,24 @@
   height: 32px;
   border: 1px solid $color--green;
   border-radius: 50%;
+
+  &:hover {
+    border-color: #7bdb0a;
+  }
+
+  &:active {
+    border-color: rgba(15, 128, 93, 0.5);
+  }
+}
+
+.social__icon {
+  fill: $color--green;
+}
+
+.social__link:hover .social__icon {
+  fill: #7bdb0a;
+}
+
+.social__link:active .social__icon {
+  fill: rgba(15, 128, 93, 0.5);
 }

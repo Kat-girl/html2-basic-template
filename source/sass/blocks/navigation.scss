@@ -15,15 +15,22 @@
 .navigation__menu-button {
   @include button-style-clear;
   background-color: transparent;
-}
 
-.navigation__menu-button--closed {
-  display: none;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:hover .navigation__icon {
+    fill: $color--green-hover;
+  }
 }
 
 .navigation__menu-button--opened {
-  display: none;
   transform: translateX(-8px);
+}
+
+.navigation__icon {
+  fill: $color--green;
 }
 
 .navigation__list {
