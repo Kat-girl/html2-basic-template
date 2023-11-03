@@ -8,7 +8,7 @@
 .footer__wrapper {
   display: flex;
   align-items: center;
-  row-gap: 6px;
+  row-gap: 2px;
   flex-wrap: wrap;
   padding-right: 26px;
   padding-left: 26px;
@@ -20,4 +20,5 @@
 
 .footer__credits {
   margin-left: auto;
+  transform: translateX(8px);
 }

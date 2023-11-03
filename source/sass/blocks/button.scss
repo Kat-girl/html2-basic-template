@@ -16,6 +16,10 @@
     background-color: #b22ec8;
   }
 
+  &:focus {
+    outline: 2px solid $color--black;
+  }
+
   &:active {
     background-color: rgba(106, 16, 122, 0.6);
   }

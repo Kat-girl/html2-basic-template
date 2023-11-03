@@ -25,12 +25,17 @@
   }
 }
 
-.navigation__menu-button--opened {
-  transform: translateX(-8px);
-}
-
 .navigation__icon {
   fill: $color--green;
+}
+
+.navigation__menu-button--opened {
+  transform: translateX(-8px);
+
+  .navigation__icon {
+    fill: $color--green;
+    fill-opacity: 0.75;
+  }
 }
 
 .navigation__list {
@@ -38,7 +43,7 @@
   flex-grow: 1;
   padding-top: 16px;
   padding-bottom: 16px;
-  background-color: #f1f6fc;
+  background-color: $color--blue-gray;
 }
 
 .navigation__link {
@@ -46,6 +51,14 @@
   padding: 14px 40px;
   font-size: 20px;
   line-height: normal;
-  color: #000000;
+  color: $color--black;
   text-decoration: none;
+
+  &:hover {
+    color: $color--green-hover;
+  }
+
+  &:active {
+    color: $color--green;
+  }
 }

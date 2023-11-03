@@ -1,3 +1,25 @@
+.logo {
+  width: 52px;
+
+  &:hover .logo__leaves {
+    fill: $color--green-hover;
+  }
+
+  &:active .logo__leaves {
+    fill: $color--green;
+    fill-opacity: 0.5;
+  }
+
+  &:focus {
+    border-radius: 2px;
+    outline: 2px solid #000000;
+  }
+
+  &:focus .logo__icon {
+    outline: none;
+  }
+}
+
 .logo--disabled {
   pointer-events: none;
   cursor: default;
@@ -8,14 +30,11 @@
   justify-content: start;
 }
 
-.logo__mobile {
-  transform: translateX(-47px);
+.logo__leaves {
+  fill: $color--green;
 }
 
-.logo__berry {
-
+.logo__name {
+  display: none;
   transform: translateX(19px);
-  @media (max-width: 767px) {
-    display: none;
-  }
 }

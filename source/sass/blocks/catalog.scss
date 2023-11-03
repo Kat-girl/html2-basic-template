@@ -40,6 +40,14 @@
   overflow: hidden;
 }
 
+.catalog__link-image {
+  display: block;
+  &:focus {
+
+    // outline: 3px solid $color--black;
+  }
+}
+
 .catalog__item-title {
   margin: 0;
   font-family: "Raleway", sans-serif;
@@ -51,8 +59,18 @@
 }
 
 .catalog__link-title {
+  padding: 10px;
   color: $color--green;
   text-decoration: none;
+
+  &:hover {
+    color: $color--green-hover;
+  }
+
+  &:active {
+    color: $color--green;
+    opacity: 0.5;
+  }
 }
 
 .catalog__price-container {

@@ -8,7 +8,7 @@
 }
 
 .contacts__wrapper {
-  margin-bottom: 34px;
+  margin-bottom: 26px;
   padding-right: 27px;
   padding-left: 27px;
 }
@@ -37,7 +37,7 @@
   @include list-style-clear;
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 8px;
   font-size: 14px;
   line-height: normal;
   font-weight: 400;
@@ -60,30 +60,38 @@
   content: url("../../images/icon-pin-leaf.svg");
 }
 
-.contacts__item--phone::before {
-  transform: translateX(50%);
-  content: url("../../images/icon-phone.svg");
-}
-
-.contacts__item--email::before {
-  transform: translate(25%, 20%);
-  content: url("../../images/icon-email.svg");
-}
-
 .contacts__address {
   font-style: normal;
 }
 
-.contacts__phone {
-  display: block;
+.contacts__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
   color: $color--black;
   text-decoration: none;
-  transform: translateY(-50%);
+  transform: translateX(-15%);
+
+  &:hover {
+    color: $color--green-hover;
+
+    .contacts__icon {
+      fill: $color--green-hover;
+    }
+  }
+
+  &:active {
+    color: $color--green;
+
+    .contacts__icon {
+      fill: $color--green;
+    }
+  }
 }
 
-.contacts__email {
-  color: $color--black;
-  text-decoration: none;
+.contacts__icon {
+  fill: $color--black;
 }
 
 .contacts__map-container {
