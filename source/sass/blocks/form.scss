@@ -50,7 +50,25 @@
   border-radius: 4px;
 }
 
-.form__checkbox--disabled {
+.form__input--checkbox:checked + .form__checkbox::before {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  content: url("../../images/tick--default.svg");
+}
+
+.form__input--checkbox:hover + .form__checkbox {
+  border-color: $color--green-hover;
+}
+
+.form__input--checkbox:checked:hover + .form__checkbox::before {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  content: url("../../images/tick--hover.svg");
+}
+
+.form__input--checkbox:disabled + .form__checkbox {
   border-color: #8e9892;
 }
 

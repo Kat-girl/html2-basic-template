@@ -9,10 +9,16 @@
 <body class="page__body">
   <header class="header">
     <div class="header__wrapper">
-      <a class="logo header__logo" href="index.html">
-        <svg width="52" height="52" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" role="img">
-          <g>
-            <use href="images/icons/stack.svg#logo-mobile"></use>
+      <a class="header__logo logo" href="index.html">
+        <svg class="logo__icon" width="133" height="52" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133 52" role="img">
+          <g class="logo__leaves">
+            <use href="images/icons/stack.svg#logo-leaves"></use>
+          </g>
+          <g class="logo__berry">
+            <use href="images/icons/stack.svg#logo-berry"></use>
+          </g>
+          <g class="logo__name">
+            <use href="images/icons/stack.svg#logo-name"></use>
           </g>
         </svg>
         <span class="visually-hidden">Логотип магазина Ягоды.</span>
@@ -30,20 +36,20 @@
               <a class="navigation__link" href="#">Контакты</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Заказать</a>
+              <a class="navigation__link" href="form.html">Заказать</a>
             </li>
           </ul>
         </nav>
-        <button class="navigation__menu-button" type="button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewbox="0 0 60 60" fill="none" role="img">
+        <button class="navigation__menu-button navigation__menu-button--closed" type="button">
+          <svg class="navigation__icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewbox="0 0 60 60" fill="none" role="img">
             <g>
               <use href="images/icons/stack.svg#burger-menu"></use>
             </g>
           </svg>
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <button class="navigation__menu-button navigation__menu-button--opened" type="button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 28 28" fill="none" role="img">
+        <button class="navigation__menu-button navigation__menu-button--opened hide" type="button">
+          <svg  class="navigation__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 28 28" fill="none" role="img">
             <g>
               <use href="images/icons/stack.svg#close-button"></use>
             </g>
@@ -66,70 +72,70 @@
             <ul class="form__list form__list--berries">
               <li class="form__item form__item--berries">
                 <label class="form__label">
-                  <input class="visually-hidden" type="checkbox" name="cowberry">
+                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="cowberry">
                   <span class="form__checkbox"></span>
                   <span class="form__label-name">брусника</span>
                 </label>
               </li>
               <li class="form__item form__item--berries">
                 <label class="form__label">
-                  <input class="visually-hidden" type="checkbox" name="cherry">
+                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="cherry">
                   <span class="form__checkbox"></span>
                   <span class="form__label-name">вишня</span>
                 </label>
               </li>
               <li class="form__item form__item--berries">
                 <label class="form__label">
-                  <input class="visually-hidden" type="checkbox" name="blueberry">
+                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="blueberry">
                   <span class="form__checkbox"></span>
                   <span class="form__label-name">голубика</span>
                 </label>
               </li>
               <li class="form__item form__item--berries">
                 <label class="form__label">
-                  <input class="visually-hidden" type="checkbox" name="blackberry">
+                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="blackberry">
                   <span class="form__checkbox"></span>
                   <span class="form__label-name">ежевика</span>
                 </label>
               </li>
               <li class="form__item form__item--berries">
                 <label class="form__label">
-                  <input class="visually-hidden" type="checkbox" name="strawberry">
+                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="strawberry">
                   <span class="form__checkbox"></span>
                   <span class="form__label-name">клубника</span>
                 </label>
               </li>
               <li class="form__item form__item--berries">
                 <label class="form__label">
-                  <input class="visually-hidden" type="checkbox" name="cranberry">
+                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="cranberry">
                   <span class="form__checkbox"></span>
                   <span class="form__label-name">клюква</span>
                 </label>
               </li>
               <li class="form__item form__item--berries">
                 <label class="form__label">
-                  <input class="visually-hidden" type="checkbox" name="gooseberry">
+                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="gooseberry">
                   <span class="form__checkbox"></span>
                   <span class="form__label-name">крыжовник</span>
                 </label>
               </li>
               <li class="form__item form__item--berries">
                 <label class="form__label">
-                  <input class="visually-hidden" type="checkbox" name="raspberry">
+                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="raspberry">
                   <span class="form__checkbox"></span>
                   <span class="form__label-name">малина</span>
                 </label>
               </li>
               <li class="form__item form__item--berries">
                 <label class="form__label">
-                  <input class="visually-hidden" type="checkbox" name="cloudberry" disabled>
+                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="cloudberry" disabled>
                   <span class="form__checkbox form__checkbox--disabled"></span>
                   <span class="form__label-name">морошка</span>
                 </label>
               </li>
               <li class="form__item form__item--berries">
                 <label class="form__label">
-                  <input class="visually-hidden" type="checkbox" name="bilberry" disabled>
+                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="bilberry" disabled>
                   <span class="form__checkbox form__checkbox--disabled"></span>
                   <span class="form__label-name">черника</span>
                 </label>
@@ -141,21 +147,21 @@
             <ul class="form__list form__list--storage">
               <li class="form__item">
                 <label class="form__label">
-                  <input class="visually-hidden" type="checkbox" name="fresh-berries">
+                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="fresh-berries">
                   <span class="form__checkbox"></span>
                   <span class="form__label-name">свежие ягоды</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__label">
-                  <input class="visually-hidden" type="checkbox" name="frozen-berries">
+                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="frozen-berries">
                   <span class="form__checkbox"></span>
                   <span class="form__label-name">замороженные ягоды</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__label">
-                  <input class="visually-hidden" type="checkbox" name="mixed-berries">
+                  <input class="visually-hidden form__input form__input--checkbox" type="checkbox" name="mixed-berries">
                   <span class="form__checkbox"></span>
                   <span class="form__label-name">ягодные миксы</span>
                 </label>
@@ -226,11 +232,25 @@
           <li class="contacts__item contacts__item--address">
             <address class="contacts__address">Набережная Обводного канала, 101</address>
           </li>
-          <li class="contacts__item contacts__item--phone">
-            <a class="contacts__phone" href="tel:+79105244118">+ 7 910 524 41 18</a>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+79105244118">
+              <svg class="contacts__icon" width="16" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" role="img">
+                <g>
+                  <use href="images/icons/stack.svg#icon-phone"></use>
+                </g>
+              </svg>
+              <span>+ 7 910 524 41 18</span>
+            </a>
           </li>
-          <li class="contacts__item contacts__item--email">
-            <a class="contacts__email" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@yagoda.ru">
+              <svg class="contacts__icon" width="18" height="14" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14" role="img">
+                <g>
+                  <use href="images/icons/stack.svg#icon-email"></use>
+                </g>
+              </svg>
+              <span>info@yagoda.ru</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -242,9 +262,15 @@
   <footer class="footer">
     <div class="footer__wrapper">
       <a class="footer__logo logo" href="index.html">
-        <svg width="52" height="52" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" role="img">
-          <g>
-            <use href="images/icons/stack.svg#logo-mobile"></use>
+        <svg class="logo__icon" width="133" height="52" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133 52" role="img">
+          <g class="logo__leaves">
+            <use href="images/icons/stack.svg#logo-leaves"></use>
+          </g>
+          <g class="logo__berry">
+            <use href="images/icons/stack.svg#logo-berry"></use>
+          </g>
+          <g class="logo__name">
+            <use href="images/icons/stack.svg#logo-name"></use>
           </g>
         </svg>
         <span class="visually-hidden">Логотип магазина Ягоды.</span>
@@ -252,8 +278,8 @@
       <ul class="social">
         <li class="social__item">
           <a class="social__link" href="#">
-            <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" role="img">
-              <g>
+            <svg class="social__icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" role="img">
+              <g class="social__group">
                 <use href="images/icons/stack.svg#telegram"></use>
               </g>
             </svg>
@@ -262,7 +288,7 @@
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
-            <svg width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" role="img">
+            <svg class="social__icon" width="20" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 16" role="img">
               <g>
                 <use href="images/icons/stack.svg#vk"></use>
               </g>
@@ -272,7 +298,7 @@
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
-            <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" role="img">
+            <svg class="social__icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" role="img">
               <g>
                 <use href="images/icons/stack.svg#youtube"></use>
               </g>
