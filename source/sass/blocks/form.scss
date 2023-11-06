@@ -68,8 +68,19 @@
   content: url("../../images/tick--hover.svg");
 }
 
+.form__input--checkbox:focus + .form__checkbox {
+  border-color: $color--purple-hover;
+}
+
+.form__input--checkbox:checked:focus + .form__checkbox::before {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  content: url("../../images/tick--focus.svg");
+}
+
 .form__input--checkbox:disabled + .form__checkbox {
-  border-color: #8e9892;
+  border-color: rgba(143, 153, 147, 0.7);
 }
 
 .form__label-name {
@@ -119,6 +130,26 @@
   content: "";
 }
 
+.form__input--radio:hover + .form__radio {
+  border-color: $color--green-hover;
+}
+
+.form__input--radio:checked:hover + .form__radio::before {
+  background-color: $color--green-hover;
+}
+
+.form__input--radio:focus + .form__radio {
+  border-color: $color--purple-hover;
+}
+
+.form__input--radio:checked:focus + .form__radio::before {
+  background-color: $color--purple-hover;
+}
+
+.form__input--radio:disabled + .form__radio {
+  border-color: rgba(143, 153, 147, 0.7);
+}
+
 .form__inputs {
   display: grid;
   gap: 36px;
@@ -140,7 +171,12 @@
 
 .form__input {
   width: 100%;
-  padding: 17px 12px;
+  padding: 15px 12px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $color--black;
   border: 1px solid $color--green;
   border-radius: 20px;
 
@@ -149,18 +185,44 @@
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
-    color: rgba(142, 152, 146, 0.70);
+    color: rgba(142, 152, 146, 0.7);
+  }
+
+  &:hover {
+    border-color: $color--green-hover;
+  }
+
+  &:focus {
+    outline: 2px solid $color--purple-hover;
+  }
+
+  &:active {
+    border-color: $color--green-hover;
   }
 }
 
+.form__input--invalid {
+  border-color: $color--error;
+}
+
+.form__tip {
+  position: absolute;
+  bottom: -24px;
+  left: 13px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color--error;
+}
+
 .form__textarea {
+  position: relative;
   display: flex;
   flex-direction: column;
 }
 
 .form__label-name--textarea {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 9px;
   padding-left: 22px;
   font-size: 14px;
   line-height: normal;
@@ -173,4 +235,8 @@
 
 .form__input--address {
   padding-bottom: 12px;
+}
+
+.form__input--request {
+  padding-bottom: 7px;
 }
