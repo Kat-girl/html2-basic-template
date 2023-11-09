@@ -1,41 +1,105 @@
+.navigation {
+  display: flex;
+}
+
 .navigation__menu {
   position: absolute;
   top: 68px;
   right: 0;
   left: 0;
-  display: none;
   min-height: 360px;
   z-index: 1;
 }
 
-.navigation__menu--opened {
-  display: flex;
+.navigation--closed {
+  .navigation__menu {
+    display: none;
+  }
+}
+
+.navigation--opened {
+  .navigation__menu {
+    display: flex;
+  }
+}
+
+.navigation--nojs {
+  position: relative;
+  left: -26px;
+  overflow: hidden;
+}
+
+.navigation--nojs .navigation__menu {
+  display: block;
+  position: relative;
+  width: 100vw;
+  top: 10px;
+  left: 0;
+  right: 0;
 }
 
 .navigation__menu-button {
   @include button-style-clear;
+  position: relative;
+  width: 60px;
+  height: 60px;
   background-color: transparent;
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &:hover .navigation__icon {
-    fill: $color--green-hover;
-  }
+  cursor: pointer;
 }
 
-.navigation__icon {
-  fill: $color--green;
+.navigation--closed .navigation__menu-button::before {
+  position: absolute;
+  top: 17px;
+  right: 7px;
+  left: 7px;
+  height: 5px;
+  background-color: $color--green;
+  border-radius: 4px;
+  box-shadow: 0 12px 0 $color--green,
+  0 24px 0 $color--green;
+  content: "";
 }
 
-.navigation__menu-button--opened {
-  transform: translateX(-8px);
+.navigation--closed .navigation__menu-button:hover::before {
+  background-color: $color--green-hover;
+  box-shadow: 0 12px 0 $color--green-hover,
+  0 24px 0 $color--green-hover;
+}
 
-  .navigation__icon {
-    fill: $color--green;
-    fill-opacity: 0.75;
-  }
+.navigation--opened .navigation__menu-button::before {
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  width: 35px;
+  height: 3px;
+  background-color: $color--green;
+  border-radius: 2px;
+  opacity: 0.75;
+  transform: rotate(45deg);
+  content: "";
+}
+
+.navigation--opened .navigation__menu-button::after {
+  position: absolute;
+  top: 30px;
+  right: 5px;
+  width: 35px;
+  height: 3px;
+  background-color: $color--green;
+  border-radius: 2px;
+  opacity: 0.75;
+  transform: rotate(-45deg);
+  content: "";
+}
+
+.navigation--opened .navigation__menu-button:hover::before,
+.navigation--opened .navigation__menu-button:hover::after {
+  background-color: $color--green-hover;
+  opacity: 1;
+}
+
+.navigation--nojs .navigation__menu-button {
+  display: none;
 }
 
 .navigation__list {

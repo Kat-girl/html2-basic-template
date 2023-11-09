@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="header">
+    <header class="header header--nojs">
       <div class="header__wrapper">
         <a class="header__logo logo logo--disabled" href="index.html">
           <svg class="logo__icon" width="133" height="52" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133 52" role="img">
@@ -23,8 +23,8 @@
           </svg>
           <span class="visually-hidden">Логотип магазина Ягоды.</span>
         </a>
-        <div class="navigation">
-          <nav class="navigation__menu">
+        <nav class="navigation navigation--closed navigation--nojs">
+          <div class="navigation__menu">
             <ul class="navigation__list">
               <li class="navigation__item">
                 <a class="navigation__link" href="#">Каталог</a>
@@ -39,24 +39,11 @@
                 <a class="navigation__link" href="form.html">Заказать</a>
               </li>
             </ul>
-          </nav>
-          <button class="navigation__menu-button navigation__menu-button--closed" type="button">
-            <svg class="navigation__icon" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewbox="0 0 60 60" fill="none" role="img">
-              <g>
-                <use href="images/icons/stack.svg#burger-menu"></use>
-              </g>
-            </svg>
+          </div>
+          <button class="navigation__menu-button" type="button">
             <span class="visually-hidden">Открыть меню.</span>
           </button>
-          <button class="navigation__menu-button navigation__menu-button--opened hide" type="button">
-            <svg  class="navigation__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewbox="0 0 28 28" fill="none" role="img">
-              <g>
-                <use href="images/icons/stack.svg#close-button"></use>
-              </g>
-            </svg>
-            <span class="visually-hidden">Закрыть меню.</span>
-          </button>
-        </div>
+        </nav>
       </div>
     </header>
     <main class="main">
@@ -241,7 +228,7 @@
           </ul>
         </div>
         <div class="contacts__map-container">
-          <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3A4567ecaf7dfa72527e9f48763e5583644ab2dccd4323f22c46f7680e44f9556c&amp;source=constructor" width="320" height="372"></iframe>
+          <iframe class="contacts__map" src="https://yandex.com/map-widget/v1/?um=constructor%3A4567ecaf7dfa72527e9f48763e5583644ab2dccd4323f22c46f7680e44f9556c&amp;source=constructor" width="320" height="372"></iframe>
         </div>
       </section>
     </main>

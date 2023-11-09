@@ -1,17 +1,16 @@
 const header = document.querySelector('.header');
-const navMenuButtons = document.querySelectorAll('.navigation__menu-button');
-const navigationMenu = document.querySelector('.navigation__menu');
-const navMenuButtonClosed = document.querySelector('.navigation__menu-button--closed');
-const navMenuButtonOpened = document.querySelector('.navigation__menu-button--opened');
+const navMenuButton = document.querySelector('.navigation__menu-button');
+const navigation = document.querySelector('.navigation');
 
-navMenuButtons.forEach((navMenuButton) => {
-  navMenuButton.addEventListener('click', () => {
-    header.classList.toggle('header--menu-opened');
-    navigationMenu.classList.toggle('navigation__menu--opened');
-    navMenuButtonClosed.classList.toggle('hide');
-    navMenuButtonOpened.classList.toggle('hide');
-  });
+header.classList.remove('header--nojs');
+navigation.classList.remove('navigation--nojs');
+
+
+navMenuButton.addEventListener('click', () => {
+  navigation.classList.toggle('navigation--opened');
+  navigation.classList.toggle('navigation--closed');
 });
+
 
 const form = document.querySelector('.form');
 
