@@ -27,5 +27,19 @@
 
 .button--link {
   display: block;
+  width: fit-content;
   text-decoration: none;
+}
+
+.button--intro {
+  margin: auto;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding-right: 104px;
+    padding-left: 104px;
+    font-size: 28px;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    transform: translateX(25px);
+  }
 }

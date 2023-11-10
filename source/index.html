@@ -11,11 +11,13 @@
       <div class="header__wrapper">
         <a class="header__logo logo logo--disabled" href="index.html">
           <svg class="logo__icon" width="133" height="52" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133 52" role="img">
-            <g class="logo__leaves">
-              <use href="images/icons/stack.svg#logo-leaves"></use>
-            </g>
-            <g class="logo__berry">
-              <use href="images/icons/stack.svg#logo-berry"></use>
+            <g class="logo__group">
+              <g class="logo__leaves">
+                <use href="images/icons/stack.svg#logo-leaves"></use>
+              </g>
+              <g class="logo__berry">
+                <use href="images/icons/stack.svg#logo-berry"></use>
+              </g>
             </g>
             <g class="logo__name">
               <use href="images/icons/stack.svg#logo-name"></use>
@@ -50,12 +52,12 @@
       <h1 class="visually-hidden">Онлайн-магазин ягод</h1>
       <section class="intro">
         <h2 class="intro__title">Ягоды с&nbsp;доставкой</h2>
-          <ul class="intro__list">
-            <li class="intro__item intro__item--selective">Отборные ягоды</li>
-            <li class="intro__item intro__item--frosted">Натуральный вкус сохранён методом шоковой заморозки</li>
-            <li class="intro__item intro__item--delivery">Доставка по Санкт-Петербургу</li>
-          </ul>
-          <a class="button button--link" href="form.html">Заказать</a>
+        <ul class="intro__list">
+          <li class="intro__item intro__item--selective">Отборные ягоды</li>
+          <li class="intro__item intro__item--frosted">Натуральный вкус сохранён методом шоковой заморозки</li>
+          <li class="intro__item intro__item--delivery">Доставка по Санкт-Петербургу</li>
+        </ul>
+        <a class="button button--link button--intro" href="form.html">Заказать</a>
       </section>
       <section class="catalog">
         <div class="catalog__wrapper">
@@ -171,6 +173,40 @@
               </p>
               <a class="button button--link catalog__button" href="form.html">Заказать</a>
             </li>
+            <li class="catalog__item catalog__item--extra">
+              <a class="catalog__link-image" href="#">
+                <picture>
+                  <source srcset="images/blueberry.webp 1x, images/blueberry@2x.webp 2x" type="image/webp">
+                  <img class="catalog__image" src="images/blueberry.png" srcset="images/blueberry@2x.png 2x" width="344" height="180" alt="Голубика.">
+                </picture>
+              </a>
+              <h3 class="catalog__item-title">
+                <a class="catalog__link-title" href="#">Голубика</a>
+              </h3>
+              <p class="catalog__price-container">
+                <span class="catalog__price">510</span>
+                <span class="catalog__currency">₽</span>
+                <span class="catalog__weight">за 1 кг</span>
+              </p>
+              <a class="button button--link catalog__button" href="form.html">Заказать</a>
+            </li>
+            <li class="catalog__item catalog__item--extra">
+              <a class="catalog__link-image" href="#">
+                <picture>
+                  <source srcset="images/cranberry.webp 1x, images/cranberry@2x.webp 2x" type="image/webp">
+                  <img class="catalog__image" src="images/cranberry.png" srcset="images/cranberry@2x.png 2x" width="344" height="180" alt="Клюква.">
+                </picture>
+              </a>
+              <h3 class="catalog__item-title">
+                <a class="catalog__link-title" href="#">Клюква</a>
+              </h3>
+              <p class="catalog__price-container">
+                <span class="catalog__price">320</span>
+                <span class="catalog__currency">₽</span>
+                <span class="catalog__weight">за 1 кг</span>
+              </p>
+              <a class="button button--link catalog__button" href="form.html">Заказать</a>
+            </li>
           </ul>
         </div>
       </section>
@@ -180,17 +216,17 @@
           <ul class="news__list">
             <li class="news__item">
               <h3 class="news__item-title">Новый урожай клубники</h3>
-              <p class="news__text">К нам поступила свежая сочная ароматная клубника из&nbsp;Алтайского края. Крупные отборные ягоды можно приобрести свежими от 200 гр, или замороженными от 1 кг. Поторопитесь, сезон клубники короткий и свежие ягоды скоро закончатся.</p>
+              <p class="news__text">К нам поступила свежая сочная ароматная клубника из&nbsp;Алтайского края. Крупные отборные ягоды можно приобрести свежими от&nbsp;200&nbsp;гр, или замороженными от&nbsp;1&nbsp;кг. Поторопитесь, сезон клубники короткий и свежие ягоды скоро закончатся.</p>
               <p class="news__date">22 июня 2022</p>
             </li>
             <li class="news__item">
               <h3 class="news__item-title">В июне дарим <br> скидку 15% на все свежие ягоды</h3>
-              <p class="news__text">Свежие ягоды урожая этого года со скидкой 15%.  Клубнику, малину, голубику, вишню доставим от 200 гр.</p>
+              <p class="news__text">Свежие ягоды урожая этого года со скидкой 15%.  Клубнику, малину, голубику, вишню доставим от&nbsp;200&nbsp;гр.</p>
               <p class="news__date">15 июня 2022</p>
             </li>
             <li class="news__item">
               <h3 class="news__item-title">Микс из ягод</h3>
-              <p class="news__text">Мы приготовим для вас смеси из&nbsp;различных замороженных ягод по вашему пожеланию. Ягодные смеси удобно использовать для приготовления напитков. Все ягоды замораживаются методом шоковой заморозки, что позволяет сохранить их&nbsp;естественный вкус и аромат.</p>
+              <p class="news__text">Мы приготовим для вас смеси из&nbsp;различных замороженных ягод по вашему пожеланию. Ягодные смеси удобно использовать для приготовления напитков. Все ягоды замораживаются методом шоковой заморозки, что позволяет сохранить их&nbsp;естественный вкус и&nbsp;аромат.</p>
               <p class="news__date">02 июня 2022</p>
             </li>
           </ul>
@@ -198,32 +234,18 @@
       </section>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="contacts__title">Где забрать
+          <h2 class="contacts__title">Где забрать <br>
             ягоды?</h2>
           <p class="contacts__text">Забери ягоды с нашего склада по&nbsp;адресу:</p>
           <ul class="contacts__list">
-            <li class="contacts__item contacts__item--address">
+            <li class="contacts__item">
               <address class="contacts__address">Набережная Обводного канала, 101</address>
             </li>
             <li class="contacts__item">
-              <a class="contacts__link" href="tel:+79105244118">
-                <svg class="contacts__icon" width="16" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 20" role="img">
-                  <g>
-                    <use href="images/icons/stack.svg#icon-phone"></use>
-                  </g>
-                </svg>
-                <span>+ 7 910 524 41 18</span>
-              </a>
+              <a class="contacts__link contacts__link--phone" href="tel:+79105244118">+ 7 910 524 41 18</a>
             </li>
             <li class="contacts__item">
-              <a class="contacts__link" href="mailto:info@yagoda.ru">
-                <svg class="contacts__icon" width="18" height="14" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 14" role="img">
-                  <g>
-                    <use href="images/icons/stack.svg#icon-email"></use>
-                  </g>
-                </svg>
-                <span>info@yagoda.ru</span>
-              </a>
+              <a class="contacts__link contacts__link--email" href="mailto:info@yagoda.ru">info@yagoda.ru</a>
             </li>
           </ul>
         </div>
@@ -236,11 +258,13 @@
       <div class="footer__wrapper">
         <a class="footer__logo logo logo--disabled" href="index.html">
           <svg class="logo__icon" width="133" height="52" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133 52" role="img">
-            <g class="logo__leaves">
-              <use href="images/icons/stack.svg#logo-leaves"></use>
-            </g>
-            <g class="logo__berry">
-              <use href="images/icons/stack.svg#logo-berry"></use>
+            <g class="logo__group">
+              <g class="logo__leaves">
+                <use href="images/icons/stack.svg#logo-leaves"></use>
+              </g>
+              <g class="logo__berry">
+                <use href="images/icons/stack.svg#logo-berry"></use>
+              </g>
             </g>
             <g class="logo__name">
               <use href="images/icons/stack.svg#logo-name"></use>
@@ -282,7 +306,7 @@
         </ul>
         <a class="footer__credits credits" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="credits__text">HTML Academy</span>
-          <img src="images/html-academy-logo.svg" width="20" height="24" alt="Логотип HTML-академии.">
+          <img class="credits__icon" src="images/html-academy-logo.svg" width="20" height="24" alt="Логотип HTML-академии.">
         </a>
       </div>
     </footer>

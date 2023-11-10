@@ -4,6 +4,11 @@
   align-items: center;
   padding: 8px;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    gap: 11px;
+    padding: 11px;
+  }
 }
 
 .credits__text {
@@ -11,4 +16,14 @@
   line-height: normal;
   font-weight: 400;
   color: $color--black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.credits__icon {
+  @media (min-width: $tablet-width) {
+    transform: scale(1.3);
+  }
 }

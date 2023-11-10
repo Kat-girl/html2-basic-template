@@ -18,6 +18,10 @@
   &:focus .logo__icon {
     outline: none;
   }
+
+  @media (min-width:$tablet-width) {
+    width: 138px;
+  }
 }
 
 .logo--disabled {
@@ -27,7 +31,17 @@
 
 .logo__icon {
   display: flex;
-  justify-content: start;
+  align-items: center;
+
+  @media (min-width:$tablet-width) {
+    height: 58px;
+  }
+}
+
+.logo__group {
+  @media (min-width:$tablet-width) {
+    transform: scale(1.1);
+  }
 }
 
 .logo__leaves {
@@ -35,6 +49,9 @@
 }
 
 .logo__name {
-  display: none;
-  transform: translateX(19px);
+  transform: translate(66px, 25%);
+
+  @media (max-width: $mobile-only) {
+    display: none;
+  }
 }
