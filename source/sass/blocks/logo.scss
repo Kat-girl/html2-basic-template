@@ -1,11 +1,13 @@
 .logo {
   width: 52px;
 
-  &:hover .logo__leaves {
+  &:hover .logo__leaves,
+  &:hover .logo__name {
     fill: $color--green-hover;
   }
 
-  &:active .logo__leaves {
+  &:active .logo__leaves,
+  &:active .logo__name {
     fill: $color--green;
     fill-opacity: 0.5;
   }
@@ -50,6 +52,7 @@
 
 .logo__name {
   transform: translate(66px, 25%);
+  fill: $color--green;
 
   @media (max-width: $mobile-only) {
     display: none;
