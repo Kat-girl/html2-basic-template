@@ -1,6 +1,6 @@
 .intro {
   min-height: 640px;
-  padding: 68px 28px;
+  padding: 68px 0;
   color: $color--black;
   background-color: #d3d3d3;
   background-image:
@@ -15,7 +15,7 @@
   background-size: 100%;
 
   @media (min-width: $tablet-width) {
-    padding: 142px 20px 423px 186px;
+    padding: 142px 0 423px;
     background-image:
     image-set(
       "../../images/intro-bg--tablet@2x.webp" type("image/webp") 2x,
@@ -23,6 +23,31 @@
       "../../images/intro-bg--tablet@2x.png" type("image/png") 2x,
       "../../images/intro-bg--tablet.png" type("image/png") 1x
     );
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 173px 0 250px;
+    background-image:
+    image-set(
+      "../../images/intro-bg--desktop@2x.webp" type("image/webp") 2x,
+      "../../images/intro-bg--desktop.webp" type("image/webp") 1x,
+      "../../images/intro-bg--desktop@2x.png" type("image/png") 2x,
+      "../../images/intro-bg--desktop.png" type("image/png") 1x
+    );
+  }
+}
+
+.intro__wrapper {
+  max-width: 1128px;
+  margin: auto;
+  padding: 0 28px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px 0 186px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 150px 0 336px;
   }
 }
 
@@ -39,6 +64,11 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 51px;
     font-size: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+    font-size: 52px;
   }
 }
 
@@ -57,6 +87,11 @@
     gap: 24px;
     font-size: 18px;
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+    padding: 0 77px;
   }
 }
 

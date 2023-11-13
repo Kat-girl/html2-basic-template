@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     padding: 100px 0 140px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 104px;
+  }
 }
 
 .catalog::after {
@@ -22,9 +26,16 @@
 }
 
 .catalog__wrapper {
+  max-width: 1128px;
+  margin: auto;
+
   @media (min-width: $tablet-width) {
     padding-right: 94px;
     padding-left: 94px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
@@ -42,6 +53,11 @@
     margin-bottom: 72px;
     font-size: 48px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 92px;
+    font-size: 52px;
+  }
 }
 
 .catalog__list {
@@ -52,6 +68,11 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
     gap: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 52px 24px;
   }
 }
 

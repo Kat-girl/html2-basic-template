@@ -1,5 +1,9 @@
 .navigation {
   display: flex;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 70px;
+  }
 }
 
 .navigation__menu {
@@ -128,6 +132,10 @@
     max-width: 650px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 50px;
+  }
 }
 
 .navigation__item {
@@ -156,5 +164,9 @@
   @media (min-width: $tablet-width) {
     padding: 18px 0;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 18px 15px;
   }
 }

@@ -20,6 +20,11 @@
     padding-top: 22px;
     padding-bottom: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .header--nojs::after {
@@ -31,6 +36,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  max-width: 1128px;
+  margin: auto;
   padding-right: 21px;
   padding-left: 26px;
 
@@ -38,5 +45,10 @@
     justify-content: space-between;
     padding-right: 40px;
     padding-left: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 0;
   }
 }

@@ -42,4 +42,8 @@
     letter-spacing: 1.4px;
     transform: translateX(25px);
   }
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(25%);
+  }
 }
