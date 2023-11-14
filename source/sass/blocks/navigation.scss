@@ -170,3 +170,12 @@
     padding: 18px 15px;
   }
 }
+
+.navigation__link--current {
+  pointer-events: none;
+  cursor: default;
+
+  @media (min-width: $desktop-width) {
+    color: $color--green;
+  }
+}

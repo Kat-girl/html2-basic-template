@@ -38,7 +38,7 @@
               <a class="navigation__link" href="#">Контакты</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="form.html">Заказать</a>
+              <a class="navigation__link navigation__link--current" href="form.html">Заказать</a>
             </li>
           </ul>
         </div>
@@ -131,7 +131,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fielset">
+          <fieldset class="form__fielset form__fielset--storage">
             <legend class="form__legend">Вид хранения</legend>
             <ul class="form__list form__list--storage">
               <li class="form__item form__item--storage">
@@ -165,7 +165,7 @@
                   <input class="visually-hidden form__input form__input--radio" type="radio"  name="delivery-type" value="delivery" checked>
                   <span class="form__radio"></span>
                   <span class="form__label-name form__label-name--delivery-type">Доставка</span>
-                  <span class="form__label-name">(по СПБ в пределах <br> КАД)</span>
+                  <span class="form__label-name form__label-name--delivery">(по СПБ в пределах <br> КАД)</span>
                 </label>
               </li>
               <li class="form__item">
@@ -173,7 +173,7 @@
                   <input class="visually-hidden form__input form__input--radio" type="radio" name="delivery-type" value="pick-up">
                   <span class="form__radio"></span>
                   <span class="form__label-name form__label-name--delivery-type">Самовывоз</span>
-                  <span class="form__label-name">(Набережная Обводного <br> канала, 101)</span>
+                  <span class="form__label-name form__label-name--delivery">(Набережная Обводного <br> канала, 101)</span>
                 </label>
               </li>
             </ul>
@@ -197,7 +197,7 @@
                 <label class="form__label form__label--contacts" for="address">
                   <span class="form__label-name form__label-name--contacts">Адрес<span class="form__label-name form__label-name--required">*</span></span>
                 </label>
-                <textarea class="form__input form__input--textarea form__input--address form__input--required" id="address" name="address" placeholder="Адрес в Санкт-Петербурге" cols="30" rows="3"
+                <textarea class="form__input form__input--textarea form__input--address form__input--required" id="address" name="address" placeholder="Адрес в Санкт-Петербурге" cols="30" rows="1"
                 required></textarea>
               </div>
               <div class="form__textarea form__textarea--request">
@@ -252,7 +252,7 @@
         </svg>
         <span class="visually-hidden">Логотип магазина Ягоды.</span>
       </a>
-      <ul class="social">
+      <ul class="footer__social social">
         <li class="social__item">
           <a class="social__link" href="#">
             <svg class="social__icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" role="img">
@@ -292,5 +292,6 @@
   </footer>
 
   <script src="js/script.js" defer></script>
+  <script src="js/form.js" defer></script>
 </body>
 </html>

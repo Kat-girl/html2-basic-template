@@ -85,7 +85,6 @@
   background-color: $color--white;
   border-radius: 40px;
   box-shadow: 0 4px 4px 0 rgba(88, 13, 101, 0.15);
-  overflow: hidden;
 }
 
 .catalog__item--extra {
@@ -96,10 +95,18 @@
 
 .catalog__link-image {
   display: block;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+
+  &:focus {
+    outline: 3px solid $color--green-hover;
+  }
 }
 
 .catalog__image {
   min-width: 100%;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
 }
 
 .catalog__item-title {
