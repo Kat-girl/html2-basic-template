@@ -15,7 +15,7 @@
   background-size: 100%;
 
   @media (min-width: $tablet-width) {
-    padding: 142px 0 423px;
+    padding: 142px 0 415px;
     background-image:
     image-set(
       "../../images/intro-bg--tablet@2x.webp" type("image/webp") 2x,
@@ -26,7 +26,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 173px 0 250px;
+    padding: 173px 0 242px;
     background-image:
     image-set(
       "../../images/intro-bg--desktop@2x.webp" type("image/webp") 2x,
