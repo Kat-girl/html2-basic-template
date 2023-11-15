@@ -77,8 +77,8 @@
 }
 
 .catalog__item {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 180px auto;
   gap: 28px;
   padding-bottom: 54px;
   color: $color--black;
@@ -107,6 +107,15 @@
   min-width: 100%;
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
+}
+
+.catalog__good-container {
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+  gap: 28px;
+  align-items: start;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .catalog__item-title {

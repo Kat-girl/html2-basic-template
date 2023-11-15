@@ -27,7 +27,7 @@
 
 .button--link {
   display: block;
-  width: fit-content;
+  max-width: min-content;
   text-decoration: none;
 }
 
