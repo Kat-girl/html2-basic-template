@@ -51,7 +51,7 @@
   position: relative;
   max-width: 1128px;
   margin: auto;
-  padding: 0 26px 75px;
+  padding: 0 26px 76px;
   overflow: hidden;
 
   &::after {
@@ -77,10 +77,10 @@
 }
 
 .order__wrapper--form {
-  padding-bottom: 125px;
+  padding-bottom: 117px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 146px;
+    padding-bottom: 138px;
   }
 }
 

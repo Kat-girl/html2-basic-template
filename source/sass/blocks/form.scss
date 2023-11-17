@@ -91,40 +91,109 @@
 }
 
 .form__list--berries {
-  max-height: 304px;
-  display: flex;
-  flex-direction: column;
   gap: 36px 20px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
   @media (min-width: $tablet-width) {
-    max-height: 210px;
+    grid-template-columns: repeat(3, 1fr);
     gap: 26px 20px;
   }
 
   @media (min-width: $desktop-width) {
-    max-height: 100px;
+    grid-template-columns: repeat(5, 1fr);
     gap: 24px 48px;
   }
 }
 
-.form__item--berries {
-  width: 123px;
+.form__item--cherry {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.form__item--blueberry {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
 
   @media (min-width: $desktop-width) {
-    width: auto;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
   }
 }
 
-.form__item--storage {
+.form__item--blackberry {
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+}
+
+.form__item--strawberry {
+  grid-row: 5 / 6;
+  grid-column: 1 / 2;
+
   @media (min-width: $tablet-width) {
-    width: 268px;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
   }
 
   @media (min-width: $desktop-width) {
-    width: fit-content;
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
   }
 }
+
+.form__item--cranberry {
+  grid-row: 6 / 7;
+  grid-column: 1 / 2;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+  }
+}
+
+.form__item--gooseberry {
+  @media (min-width: $tablet-width) {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+  }
+}
+
+.form__item--raspberry {
+  @media (min-width: $tablet-width) {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+  }
+}
+
+// .form__item--storage {
+//   @media (min-width: $tablet-width) {
+//     width: 268px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     width: fit-content;
+//   }
+// }
 
 .form__label {
   position: relative;
@@ -215,22 +284,31 @@
 }
 
 .form__list--storage {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 28px 40px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: column;
-    max-height: 100px;
+    grid-template-columns: repeat(2, 1fr);
     gap: 25px 10px;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    max-height: 68px;
+    grid-template-columns: repeat(3, auto);
     gap: 25px 48px;
+    max-width: 642px;
+  }
+}
+
+.form__item--frozen-berries {
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
   }
 
+  @media (min-width: $desktop-width) {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
 }
 
 .form__list--delivery {
@@ -450,9 +528,12 @@
 
 .form__button {
   display: block;
+  max-width: 100%;
   margin: auto;
+  margin-bottom: 8px;
 
   @media (min-width: $tablet-width) {
+    max-width: min-content;
     padding-right: 104px;
     padding-left: 104px;
     font-size: 28px;
