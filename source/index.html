@@ -5,6 +5,12 @@
     <title>Ягоды</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/Raleway-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Comfortaa-Regular.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body class="page__body">
     <header class="header header--nojs">
@@ -29,7 +35,7 @@
           <div class="navigation__menu">
             <ul class="navigation__list">
               <li class="navigation__item">
-                <a class="navigation__link" href="#">Каталог</a>
+                <a class="navigation__link" href="#catalog">Каталог</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="#">Новости</a>
@@ -63,10 +69,10 @@
       </section>
       <section class="catalog">
         <div class="catalog__wrapper">
-          <h2 class="catalog__title">Каталог</h2>
+          <h2 class="catalog__title" id="catalog">Каталог</h2>
           <ul class="catalog__list">
             <li class="catalog__item">
-              <a class="catalog__link-image" href="#">
+              <a class="catalog__link-image" href="catalog.html">
                 <picture>
                   <source srcset="images/raspberry.webp 1x, images/raspberry@2x.webp 2x" type="image/webp">
                   <img class="catalog__image" src="images/raspberry.png" srcset="images/raspberry@2x.png 2x" width="344" height="180" alt="Малина.">
@@ -74,7 +80,7 @@
               </a>
               <div class="catalog__good-container">
                 <h3 class="catalog__item-title">
-                  <a class="catalog__link-title" href="#">Малина</a>
+                  <a class="catalog__link-title" href="catalog.html">Малина</a>
                 </h3>
                 <p class="catalog__price-container">
                   <span class="catalog__price">350</span>
@@ -85,7 +91,7 @@
               </div>
             </li>
             <li class="catalog__item">
-              <a class="catalog__link-image" href="#">
+              <a class="catalog__link-image" href="catalog.html">
                 <picture>
                   <source srcset="images/blackberry.webp 1x, images/blackberry@2x.webp 2x" type="image/webp">
                   <img class="catalog__image" src="images/blackberry.png" srcset="images/blackberry@2x.png 2x" width="344" height="180" alt="Ежевика.">
@@ -93,7 +99,7 @@
               </a>
               <div class="catalog__good-container">
                 <h3 class="catalog__item-title">
-                  <a class="catalog__link-title" href="#">Ежевика</a>
+                  <a class="catalog__link-title" href="catalog.html">Ежевика</a>
                 </h3>
                 <p class="catalog__price-container">
                   <span class="catalog__price">550</span>
@@ -104,7 +110,7 @@
               </div>
             </li>
             <li class="catalog__item">
-              <a class="catalog__link-image" href="#">
+              <a class="catalog__link-image" href="catalog.html">
                 <picture>
                   <source srcset="images/cowberry.webp 1x, images/cowberry@2x.webp 2x" type="image/webp">
                   <img class="catalog__image" src="images/cowberry.png" srcset="images/cowberry@2x.png 2x" width="344" height="180" alt="Брусника.">
@@ -112,7 +118,7 @@
               </a>
               <div class="catalog__good-container">
                 <h3 class="catalog__item-title">
-                  <a class="catalog__link-title" href="#">Брусника</a>
+                  <a class="catalog__link-title" href="catalog.html">Брусника</a>
                 </h3>
                 <p class="catalog__price-container">
                   <span class="catalog__price">390</span>
@@ -123,7 +129,7 @@
               </div>
             </li>
             <li class="catalog__item">
-              <a class="catalog__link-image" href="#">
+              <a class="catalog__link-image" href="catalog.html">
                 <picture>
                   <source srcset="images/strawberry.webp 1x, images/strawberry@2x.webp 2x" type="image/webp">
                   <img class="catalog__image" src="images/strawberry.png" srcset="images/strawberry@2x.png 2x" width="344" height="180" alt="Клубника.">
@@ -131,7 +137,7 @@
               </a>
               <div class="catalog__good-container">
                 <h3 class="catalog__item-title">
-                  <a class="catalog__link-title" href="#">Клубника</a>
+                  <a class="catalog__link-title" href="catalog.html">Клубника</a>
                 </h3>
                 <p class="catalog__price-container">
                   <span class="catalog__price">450</span>
@@ -142,7 +148,7 @@
               </div>
             </li>
             <li class="catalog__item">
-              <a class="catalog__link-image" href="#">
+              <a class="catalog__link-image" href="catalog.html">
                 <picture>
                   <source srcset="images/cherry.webp 1x, images/cherry@2x.webp 2x" type="image/webp">
                   <img class="catalog__image" src="images/cherry.png" srcset="images/cherry@2x.png 2x" width="344" height="180" alt="Вишня.">
@@ -150,7 +156,7 @@
               </a>
               <div class="catalog__good-container">
                 <h3 class="catalog__item-title">
-                  <a class="catalog__link-title" href="#">Вишня</a>
+                  <a class="catalog__link-title" href="catalog.html">Вишня</a>
                 </h3>
                 <p class="catalog__price-container">
                   <span class="catalog__price">375</span>
@@ -161,7 +167,7 @@
               </div>
             </li>
             <li class="catalog__item">
-              <a class="catalog__link-image" href="#">
+              <a class="catalog__link-image" href="catalog.html">
                 <picture>
                   <source srcset="images/gooseberry.webp 1x, images/gooseberry@2x.webp 2x" type="image/webp">
                   <img class="catalog__image" src="images/gooseberry.png" srcset="images/gooseberry@2x.png 2x" width="344" height="180" alt="Крыжовник.">
@@ -169,7 +175,7 @@
               </a>
               <div class="catalog__good-container">
                 <h3 class="catalog__item-title">
-                  <a class="catalog__link-title" href="#">Крыжовник</a>
+                  <a class="catalog__link-title" href="catalog.html">Крыжовник</a>
                 </h3>
                 <p class="catalog__price-container">
                   <span class="catalog__price">300</span>
@@ -180,7 +186,7 @@
               </div>
             </li>
             <li class="catalog__item catalog__item--extra">
-              <a class="catalog__link-image" href="#">
+              <a class="catalog__link-image" href="catalog.html">
                 <picture>
                   <source srcset="images/blueberry.webp 1x, images/blueberry@2x.webp 2x" type="image/webp">
                   <img class="catalog__image" src="images/blueberry.png" srcset="images/blueberry@2x.png 2x" width="344" height="180" alt="Голубика.">
@@ -188,7 +194,7 @@
               </a>
               <div class="catalog__good-container">
                 <h3 class="catalog__item-title">
-                  <a class="catalog__link-title" href="#">Голубика</a>
+                  <a class="catalog__link-title" href="catalog.html">Голубика</a>
                 </h3>
                 <p class="catalog__price-container">
                   <span class="catalog__price">510</span>
@@ -199,7 +205,7 @@
               </div>
             </li>
             <li class="catalog__item catalog__item--extra">
-              <a class="catalog__link-image" href="#">
+              <a class="catalog__link-image" href="catalog.html">
                 <picture>
                   <source srcset="images/cranberry.webp 1x, images/cranberry@2x.webp 2x" type="image/webp">
                   <img class="catalog__image" src="images/cranberry.png" srcset="images/cranberry@2x.png 2x" width="344" height="180" alt="Клюква.">
@@ -207,7 +213,7 @@
               </a>
               <div class="catalog__good-container">
                 <h3 class="catalog__item-title">
-                  <a class="catalog__link-title" href="#">Клюква</a>
+                  <a class="catalog__link-title" href="catalog.html">Клюква</a>
                 </h3>
                 <p class="catalog__price-container">
                   <span class="catalog__price">320</span>
@@ -265,7 +271,15 @@
             </li>
           </ul>
         </div>
-        <div class="contacts__map-container">
+        <div class="contacts__map-container contacts__map-container--nojs">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/map--desktop.webp 1x, images/map--desktop@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="images/map--tablet.webp 1x, images/map--tablet@2x.webp 2x" type="image/webp">
+            <source srcset="images/map--mobile.webp 1x, images/map--mobile@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 1440px)" srcset="images/map--desktop.png 1x, images/map--desktop@2x.png 2x" type="image/png">
+            <source media="(min-width: 768px)" srcset="images/map--tablet.png 1x, images/map--tablet@2x.png 2x" type="image/png">
+            <img class="contacts__map-picture" src="images/map--mobile.png" width="320" height="372" srcset="images/map--mobile@2x.png 2x" alt="Карта местности." loading="lazy">
+          </picture>
           <iframe class="contacts__map" src="https://yandex.com/map-widget/v1/?um=constructor%3A4567ecaf7dfa72527e9f48763e5583644ab2dccd4323f22c46f7680e44f9556c&amp;source=constructor" width="320" height="372"></iframe>
         </div>
       </section>

@@ -6,6 +6,11 @@
   padding: 8px;
   text-decoration: none;
 
+  &:focus {
+    border-radius: 2px;
+    outline: 2px solid $color--black;
+  }
+
   @media (min-width: $tablet-width) {
     gap: 11px;
     padding: 11px;

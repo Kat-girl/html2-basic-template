@@ -2,9 +2,13 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
-    <title>Ягоды | Форма заказа</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+  <title>Ягоды | Форма заказа</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
   <header class="header header--nojs">
@@ -29,7 +33,7 @@
         <div class="navigation__menu">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link" href="#">Каталог</a>
+              <a class="navigation__link" href="index.html#catalog">Каталог</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="#">Новости</a>
@@ -229,7 +233,15 @@
           </li>
         </ul>
       </div>
-      <div class="contacts__map-container">
+      <div class="contacts__map-container contacts__map-container--nojs">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/map--desktop.webp 1x, images/map--desktop@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 768px)" srcset="images/map--tablet.webp 1x, images/map--tablet@2x.webp 2x" type="image/webp">
+          <source srcset="images/map--mobile.webp 1x, images/map--mobile@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 1440px)" srcset="images/map--desktop.png 1x, images/map--desktop@2x.png 2x" type="image/png">
+          <source media="(min-width: 768px)" srcset="images/map--tablet.png 1x, images/map--tablet@2x.png 2x" type="image/png">
+          <img class="contacts__map-picture" src="images/map--mobile.png" width="320" height="372" srcset="images/map--mobile@2x.png 2x" alt="Карта местности." loading="lazy">
+        </picture>
         <iframe class="contacts__map" src="https://yandex.com/map-widget/v1/?um=constructor%3A4567ecaf7dfa72527e9f48763e5583644ab2dccd4323f22c46f7680e44f9556c&amp;source=constructor" width="320" height="372"></iframe>
       </div>
     </section>

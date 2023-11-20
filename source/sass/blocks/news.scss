@@ -40,7 +40,7 @@
 .news__title {
   margin: 0;
   margin-bottom: 64px;
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Comfortaa", "Century Gothic", sans-serif;
   font-size: 36px;
   line-height: normal;
   font-weight: 400;
@@ -76,10 +76,6 @@
 
 .news__item {
   position: relative;
-  // display: grid;
-  // grid-template-rows: min-content auto min-content;
-  // gap: 12px;
-  // align-items: start;
   max-width: 360px;
   min-height: 400px;
   margin: auto;
@@ -157,6 +153,11 @@
 
   &:hover {
     color: $color--green-hover;
+  }
+
+  &:focus {
+    border-radius: 2px;
+    outline: 2px solid $color--black;
   }
 
   &:active {

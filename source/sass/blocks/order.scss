@@ -45,6 +45,10 @@
       "../../images/berries-bg--desktop.png" type("image/png") 1x
     );
   }
+
+  @media (min-width: 2000px) {
+    padding-top: 400px;
+  }
 }
 
 .order__wrapper {
@@ -87,7 +91,7 @@
 .order__title {
   margin: 0;
   margin-bottom: 30px;
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Comfortaa", "Century Gothic", sans-serif;
   font-size: 36px;
   line-height: normal;
   font-weight: 400;

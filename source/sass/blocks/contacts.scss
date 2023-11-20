@@ -51,7 +51,7 @@
 .contacts__title {
   margin: 0;
   margin-bottom: 64px;
-  font-family: "Comfortaa", sans-serif;
+  font-family: "Comfortaa", "Century Gothic", sans-serif;
   font-size: 36px;
   line-height: normal;
   font-weight: 400;
@@ -133,6 +133,11 @@
     color: $color--green-hover;
   }
 
+  &:focus {
+    border-radius: 2px;
+    outline: 2px solid $color--black;
+  }
+
   &:active {
     color: $color--green;
   }
@@ -172,6 +177,14 @@
     width: 552px;
     justify-self: end;
   }
+}
+
+.contacts__map-container--nojs .contacts__map {
+  display: none;
+}
+
+.contacts__map-picture {
+  width: 100vw;
 }
 
 .contacts__map {

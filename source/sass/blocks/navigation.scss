@@ -43,7 +43,15 @@
 .navigation--nojs {
   position: relative;
   left: -26px;
-  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 3px;
+    max-width: 597px;
+  }
 }
 
 .navigation--nojs .navigation__menu {
@@ -53,6 +61,10 @@
   top: 10px;
   left: 0;
   right: 0;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }
 
 .navigation__menu-button {
@@ -126,8 +138,7 @@
 .navigation__list {
   @include list-style-clear;
   flex-grow: 1;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 10px;
   background-color: $color--blue-gray;
 
   @media (min-width: $tablet-width) {
@@ -151,7 +162,8 @@
 
 .navigation__link {
   display: block;
-  padding: 14px 40px;
+  width: fit-content;
+  padding: 14px 30px;
   font-size: 20px;
   line-height: normal;
   font-weight: 400;
@@ -162,11 +174,17 @@
     color: $color--green-hover;
   }
 
+  &:focus {
+    border-radius: 2px;
+    outline: 2px solid $color--black;
+  }
+
   &:active {
     color: $color--green;
   }
 
   @media (min-width: $tablet-width) {
+    width: unset;
     padding: 18px 0;
     text-align: center;
   }

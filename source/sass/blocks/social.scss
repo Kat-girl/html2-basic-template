@@ -28,6 +28,10 @@
     border-color: #7bdb0a;
   }
 
+  &:focus {
+    outline: 2px solid $color--purple;
+  }
+
   &:active {
     border-color: rgba(15, 128, 93, 0.5);
   }

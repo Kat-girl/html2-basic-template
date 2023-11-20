@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 2px;
   padding-bottom: 6px;
-  color: #ffffff;
+  color: $color--black;
   background-color: #f1f6fc;
 
   &::after {
@@ -27,8 +27,21 @@
   }
 }
 
+.header--nojs {
+  padding-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+  }
+}
+
 .header--nojs::after {
   top: 63px;
+
+  @media (min-width: $tablet-width) {
+    top: unset;
+    bottom: 0;
+  }
 }
 
 .header__wrapper {
@@ -42,7 +55,6 @@
   padding-left: 26px;
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
     padding-right: 40px;
     padding-left: 26px;
   }
