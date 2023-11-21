@@ -32,7 +32,11 @@
           </svg>
           <span class="visually-hidden">Логотип магазина Ягоды.</span>
         </a>
+        <!-- класс navigation--closed - меню в мобильной версии закрыто. При нажатии на кнопку "гамбургер" убирается класс navigation--closed, добавляется класс navigation--opened, который предусматривает открытое меню. Класс navigation--nojs - при отключенном javascript меню открыто и находится в потоке.  -->
         <nav class="navigation navigation--closed navigation--nojs">
+          <button class="navigation__menu-button" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
           <div class="navigation__menu">
             <ul class="navigation__list">
               <li class="navigation__item">
@@ -49,9 +53,6 @@
               </li>
             </ul>
           </div>
-          <button class="navigation__menu-button" type="button">
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
         </nav>
       </div>
     </header>

@@ -71,6 +71,11 @@
   background-color: transparent;
   cursor: pointer;
 
+  &:focus {
+    border-radius: 2px;
+    outline: 2px solid $color--black;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }

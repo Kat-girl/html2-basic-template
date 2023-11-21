@@ -521,6 +521,8 @@
   max-width: 100%;
   margin: auto;
   margin-bottom: 8px;
+  padding-right: 93px;
+  padding-left: 83px;
 
   @media (min-width: $tablet-width) {
     max-width: min-content;
@@ -529,5 +531,10 @@
     font-size: 28px;
     line-height: normal;
     letter-spacing: 1.4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 108px;
+    padding-left: 102px;
   }
 }
