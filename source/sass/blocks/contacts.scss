@@ -175,7 +175,8 @@
     grid-row: 1 / 2;
     grid-column: 1 / 2;
     width: 552px;
-    height: fit-content;
+    height: 80%;
+    min-height: 372px;
     justify-self: end;
   }
 }
@@ -194,7 +195,7 @@
 
   @media (min-width: $desktop-width) {
     width: 552px;
-    height: 80%;
+    height: 100%;
     min-height: 372px;
   }
 }
