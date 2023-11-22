@@ -106,6 +106,11 @@
   }
 }
 
+.form__item--berries .form__label,
+.form__item--storage .form__label {
+    text-transform: lowercase;
+}
+
 .form__item--cherry {
   grid-row: 2 / 3;
   grid-column: 1 / 2;
