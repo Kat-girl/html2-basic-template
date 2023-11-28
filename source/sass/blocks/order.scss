@@ -4,10 +4,10 @@
   background-color: #ffffff;
   background-image:
     image-set(
-      "../../images/berries-bg--mobile@2x.webp" type("image/webp") 2x,
-      "../../images/berries-bg--mobile.webp" type("image/webp") 1x,
-      "../../images/berries-bg--mobile@2x.png" type("image/png") 2x,
-      "../../images/berries-bg--mobile.png" type("image/png") 1x
+      "../images/berries-bg--mobile@2x.webp" type("image/webp") 2x,
+      "../images/berries-bg--mobile.webp" type("image/webp") 1x,
+      "../images/berries-bg--mobile@2x.png" type("image/png") 2x,
+      "../images/berries-bg--mobile.png" type("image/png") 1x
     );
   background-size: 100%;
   background-position: center top;
@@ -24,10 +24,10 @@
   @media (min-width: $tablet-width) {
     background-image:
       image-set(
-        "../../images/berries-bg--tablet@2x.webp" type("image/webp") 2x,
-        "../../images/berries-bg--tablet.webp" type("image/webp") 1x,
-        "../../images/berries-bg--tablet@2x.png" type("image/png") 2x,
-        "../../images/berries-bg--tablet.png" type("image/png") 1x
+        "../images/berries-bg--tablet@2x.webp" type("image/webp") 2x,
+        "../images/berries-bg--tablet.webp" type("image/webp") 1x,
+        "../images/berries-bg--tablet@2x.png" type("image/png") 2x,
+        "../images/berries-bg--tablet.png" type("image/png") 1x
       );
   }
 
@@ -39,10 +39,10 @@
     padding-top: 300px;
     background-image:
       image-set(
-        "../../images/berries-bg--desktop@2x.webp" type("image/webp") 2x,
-        "../../images/berries-bg--desktop.webp" type("image/webp") 1x,
-        "../../images/berries-bg--desktop@2x.png" type("image/png") 2x,
-        "../../images/berries-bg--desktop.png" type("image/png") 1x
+        "../images/berries-bg--desktop@2x.webp" type("image/webp") 2x,
+        "../images/berries-bg--desktop.webp" type("image/webp") 1x,
+        "../images/berries-bg--desktop@2x.png" type("image/png") 2x,
+        "../images/berries-bg--desktop.png" type("image/png") 1x
       );
   }
 
